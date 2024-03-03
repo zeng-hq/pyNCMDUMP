@@ -175,7 +175,7 @@ if __name__ == '__main__':
         metavar='',
         type=int,
         help=f'parallel convertion when set to more than 1 workers (default: 1)',
-        default=1
+        default=6
     )
     args = parser.parse_args()
     dump(*args.paths, n_workers=args.workers)
